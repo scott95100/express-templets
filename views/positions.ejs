@@ -9,7 +9,9 @@
     <div>
         <% for(let i = 0; i < positionsArr.length; i++) { %>
             <% let eachPosition = positionsArr[i] %>
-            <p>%= eachPosition %></p>
+            <% if(eachPosition === "quarterback") {%>
+                <p><%= eachPosition %></p>
+            <% } %>
         <% } %>
     </div>
 </body>
